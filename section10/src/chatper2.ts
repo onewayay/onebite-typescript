@@ -80,7 +80,7 @@ type Thumbnail = Record<
   { url: string; size: number }
 >;
 
-// 나만의 Omit 타입 직접 구현해보기
+// 나만의 Record 타입 직접 구현해보기
 // -> 이런식으로 구현된다고 알아보기만 하면 됨. 실제로는 그냥 위에처럼 쓰면 됨
 type Record<K extends keyof any, V> = {
   [key in K]: V;
